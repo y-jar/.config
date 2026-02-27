@@ -2,21 +2,20 @@ This is the start of my config file journey
 
 
 
-## Quick Install Commands
+## Direct Install
 
-### Copy and paste these commands into your terminal to pull specific configurations:
-
-**Neovim Config**
+If you don't have Node.js installed, use these commands to pull specific configs directly into your ~/.config folder.
+Neovim Config
 ```Bash
-npx degit y-jar/.config/nvim ~/.config/nvim
+mkdir -p ~/.config/nvim && curl -L https://github.com/y-jar/.config/tarball/main/nvim | tar -xz -C ~/.config/nvim --strip-components=1
 ```
 
 Fastfetch Config
 ```Bash
-npx degit y-jar/.config/fastfetch ~/.config/fastfetch
+mkdir -p ~/.config/fastfetch && curl -L https://github.com/y-jar/.config/tarball/main/fastfetch | tar -xz -C ~/.config/fastfetch --strip-components=1
 ```
 
 Kitty Config
 ```Bash
-npx degit y-jar/.config/kitty ~/.config/kitty
+mkdir -p ~/.config/kitty && curl -L https://github.com/y-jar/.config/tarball/main/kitty | tar -xz -C ~/.config/kitty --strip-components=1
 ```
